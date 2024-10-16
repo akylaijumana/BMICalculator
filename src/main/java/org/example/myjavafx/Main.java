@@ -14,7 +14,6 @@ public class Main extends Application {
         // Load FXML
         Parent root = FXMLLoader.load(getClass().getResource("BMICalculator.fxml"));
 
-        // If root is an AnchorPane, set background
         if (root instanceof AnchorPane) {
             AnchorPane anchorPane = (AnchorPane) root;
             anchorPane.setStyle("-fx-background-color: #FDB0C0;");

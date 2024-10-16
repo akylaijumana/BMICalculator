@@ -3,10 +3,10 @@ package org.example.myjavafx;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 
 public class BMICalculatorController {
-
 
     @FXML
     private TextField weightField;
@@ -16,10 +16,32 @@ public class BMICalculatorController {
     private Label resultLabel;
     @FXML
     private Button calculateButton;
+    @FXML
+    private Label statusResultLabel;
+    @FXML
+    private MenuItem clearMenuItem;
+    @FXML
+    private MenuItem exitMenuItem;
+
 
     @FXML
     private void initialize() {
         calculateButton.setOnAction(event -> calculateBMI());
+        clearMenuItem.setOnAction(event ->onClearMenuClick());
+        exitMenuItem.setOnAction(event -> onExitMenuClick());
+
+    }
+
+    @FXML
+    private void onClearMenuClick() {
+        weightField.clear();
+        heightField.clear();
+        resultLabel.setText("");
+    }
+
+    @FXML
+    private void onExitMenuClick() {
+        System.exit(0);
     }
 
     private void calculateBMI() {
@@ -40,10 +62,9 @@ public class BMICalculatorController {
                 category = "Obese";
             }
 
-            resultLabel.setText(String.format("Your BMI is: %.2f (%s)", bmi, category));
+            resultLabel.setText(String.format("Your BMI (Body Mass Index) : %.2f (%s)", bmi, category));
         } catch (NumberFormatException e) {
             resultLabel.setText("Please enter valid numbers.");
         }
     }
 }
-
