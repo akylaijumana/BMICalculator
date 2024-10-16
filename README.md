@@ -21,6 +21,5 @@ BMI is a useful tool for identifying individuals who may be at risk for health i
 However, it should be used alongside other assessments and health evaluations for a more comprehensive understanding of an individual’s health status.
 Always consult a healthcare professional for personalized advice.
 
-![Screenshot]
-(![Снимок экрана 2024-10-16 195007](https://github.com/user-attachments/assets/73096b6b-b0bd-4430-92bf-ddca3882be2c)
- )
+
+![Снимок экрана 2024-10-16 193758](https://github.com/user-attachments/assets/48752570-e617-4b43-a6bc-5a679cf48404)
