@@ -20,4 +20,5 @@ BMI=70 /(1.75)^2≈22.86
 BMI is a useful tool for identifying individuals who may be at risk for health issues due to their weight. 
 However, it should be used alongside other assessments and health evaluations for a more comprehensive understanding of an individual’s health status.
 Always consult a healthcare professional for personalized advice.
-![Screenshot]( 195007.png")
+![Screenshot](![Снимок экрана 2024-10-16 195007](https://github.com/user-attachments/assets/73096b6b-b0bd-4430-92bf-ddca3882be2c)
+ )
